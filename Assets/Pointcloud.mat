@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Pointcloud
+  m_Shader: {fileID: 4800000, guid: 4f8d2cbedaa582e4a9548ff9e7d938e2, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: Colour
+      second:
+        m_Texture: {fileID: 8400000, guid: 95b899b992b23cb45ba371875b48c21e, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: Depth
+      second:
+        m_Texture: {fileID: 8400000, guid: af1389c5b45583c4a8b4a5771df7c583, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: DepthFarClip
+      second: 2.78
+    - first:
+        name: DepthFovHorz
+      second: 45
+    - first:
+        name: DepthFovVert
+      second: 45
+    - first:
+        name: DepthMaxMetres
+      second: 10
+    - first:
+        name: DepthNearClip
+      second: -1.4
+    - first:
+        name: DepthScalar
+      second: 1
+    - first:
+        name: InvalidMaxMm
+      second: 10000
+    - first:
+        name: InvalidMinMm
+      second: 259
+    - first:
+        name: InvalidMm
+      second: 9998
+    - first:
+        name: KinectFarMm
+      second: 9780
+    - first:
+        name: KinectNearMm
+      second: 0
+    - first:
+        name: ParticleSize
+      second: 0.0198
+    - first:
+        name: PointSize
+      second: 4.33
+    - first:
+        name: Radius
+      second: 0.306
+    - first:
+        name: ShowInvalidAndClipped
+      second: 0
+    - first:
+        name: UseVertexColour
+      second: 0
+    m_Colors: []
