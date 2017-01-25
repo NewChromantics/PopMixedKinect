@@ -557,6 +557,107 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &634773329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 634773331}
+  - component: {fileID: 634773330}
+  m_Layer: 0
+  m_Name: Vive Capture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &634773330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 634773329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3fe7a4db6b44b2297d35af5a61c29f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetTexture: {fileID: 8400000, guid: 95b899b992b23cb45ba371875b48c21e, type: 2}
+  Filename: device:isight
+  MovieTime: 0
+  MovieTimeScalar: 1
+  Parameters:
+    SkipPushFrames: 0
+    SkipPopFrames: 1
+    AllowGpuColourConversion: 1
+    AllowCpuColourConversion: 0
+    AllowSlowCopy: 1
+    AllowFastCopy: 1
+    PixelClientStorage: 0
+    StretchImage: 1
+    DebugFrameSkipping: 0
+    PeekBeforeDefferedCopy: 1
+    DebugNoNewPixelBuffer: 0
+    DebugRenderThreadCallback: 0
+    ResetInternalTimestamp: 1
+    DebugBlit: 0
+    ApplyVideoTransform: 1
+    GenerateMipMaps: 0
+    PopNearestFrame: 0
+    DebugTimers: 0
+    DecoderUseHardwareBuffer: 1
+    BlitFatalErrors: 1
+    ForceNonPlanarOutput: 0
+    MergeYuv: 1
+    ClearBeforeBlit: 1
+    EnableAudioStreams: 1
+    EnableVideoStreams: 1
+    EnableDepthStreams: 1
+    EnableSkeletonStreams: 1
+    EnableAlpha: 1
+    CopyFrameAtUpdateTime: 0
+    OnlyExtractKeyframes: 0
+    ApplyHeightPadding: 1
+    ApplyWidthPadding: 1
+    WindowIncludeBorders: 1
+    VerboseDebug: 0
+    Windows7Emulation: 0
+    SplitAudioChannelsIntoStreams: 0
+    SplitVideoPlanesIntoStreams: 0
+    EnableDecoderThreading: 1
+    UseLiveTimestampsForStreaming: 1
+    CopyBuffersInExtraction: 0
+    ExtractorPreDecodeSkip: 0
+  PlayOnAwake: 1
+  Playing: 0
+  OnFinished:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnStreamsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  AudioStream: 0
+  VideoStream: 0
+  EnableDebugLog: 0
+--- !u!4 &634773331
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 634773329}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6849722, y: -2.351191, z: -7.0912647}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &947158313
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +806,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1383062479
 BoxCollider:
@@ -729,7 +830,7 @@ GameObject:
   - component: {fileID: 1745621454}
   - component: {fileID: 1745621453}
   m_Layer: 0
-  m_Name: Capture
+  m_Name: Kinect Capture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -774,7 +875,7 @@ MonoBehaviour:
     MergeYuv: 1
     ClearBeforeBlit: 1
     EnableAudioStreams: 0
-    EnableVideoStreams: 1
+    EnableVideoStreams: 0
     EnableDepthStreams: 1
     EnableSkeletonStreams: 0
     EnableAlpha: 1
@@ -804,7 +905,65 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1911776153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1911776155}
+  - component: {fileID: 1911776154}
+  m_Layer: 0
+  m_Name: Cast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1911776154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1911776153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a0cbf90f6e49a4587660d542283506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Stop: 0
+  Input: {fileID: 8400000, guid: 95b899b992b23cb45ba371875b48c21e, type: 2}
+  Params:
+    ShowFinishedFile: 1
+    SkipFrames: 0
+    PushDebugFrames: 0
+    MaxSeconds: 0
+    MaxKb: 0
+    BitRateMegaBytesPerSec: 32
+    FrameRate: 30
+    Gif_AllowIntraFrames: 1
+    Gif_DebugPalette: 0
+    Gif_DebugIndexes: 0
+    Gif_DebugTransparency: 0
+    Gif_CPUOnly: 0
+    Gif_LzwCompression: 1
+  Filename: file:streamingassets/*.mp4
+  EnableDebugLog: 1
+--- !u!4 &1911776155
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1911776153}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 235.26558, y: 374.47998, z: 141.72772}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2140060441
 GameObject:

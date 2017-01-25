@@ -30,7 +30,7 @@ Material:
     m_Floats:
     - first:
         name: DepthFarClip
-      second: 2.78
+      second: 7.03
     - first:
         name: DepthFovHorz
       second: 45
@@ -42,7 +42,7 @@ Material:
       second: 10
     - first:
         name: DepthNearClip
-      second: -1.4
+      second: -0.92
     - first:
         name: DepthScalar
       second: 1
